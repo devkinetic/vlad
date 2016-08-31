@@ -23,6 +23,12 @@
     php_flavour: "php_54"
     php_ppa: "php5-5.6"
 
+# - name: setup php variables for php 7.0
+#   when: php_version == "7.0"
+#   set_fact:
+#     php_flavour: "php_54"
+#     php_ppa: "php5-5.6"
+
 - include: debian_php_common.yml
 
 - include: debian_php_53.yml
